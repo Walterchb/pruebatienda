@@ -1,4 +1,165 @@
-<div id="my-store-72757505"></div>
-<div>
-<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?72757505&data_platform=code&data_date=2024-11-02" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-72757505");</script>
-</div>
+<div id='product-component-1730573688557'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'xc1100-0y.myshopify.com',
+      storefrontAccessToken: 'fdde0ad186662dae848ef3ec65477ee0',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '8068498292931',
+        node: document.getElementById('product-component-1730573688557'),
+        moneyFormat: 'S%2F.%20%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Avant Garde, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#1e3e44"
+        },
+        "background-color": "#21454b",
+        ":focus": {
+          "background-color": "#1e3e44"
+        },
+        "padding-left": "28px",
+        "padding-right": "28px"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Avant Garde, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#1e3e44"
+        },
+        "background-color": "#21454b",
+        ":focus": {
+          "background-color": "#1e3e44"
+        },
+        "padding-left": "28px",
+        "padding-right": "28px"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Avant Garde, sans-serif",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#1e3e44"
+        },
+        "background-color": "#21454b",
+        ":focus": {
+          "background-color": "#1e3e44"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Avant Garde, sans-serif",
+        "background-color": "#21454b",
+        ":hover": {
+          "background-color": "#1e3e44"
+        },
+        ":focus": {
+          "background-color": "#1e3e44"
+        }
+      },
+      "count": {
+        "font-size": "13px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
